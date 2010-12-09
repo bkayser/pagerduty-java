@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="jar" name="Pager Duty">
+    
+    <property name="debuglevel" value="source,lines,vars"/>
+    
+    <path id="build.classpath">
+        <pathelement location="lib/json_simple-1.1.jar"/>
+    </path>
+    <target name="clean">
+        <delete dir="classes"/>
+    </target>
+    <target name="build">
+        <mkdir dir="classes"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="classes" includeantruntime="false">
+            <src path="src"/>
+            <classpath refid="build.classpath"/>
+        </javac>
+    </target>
+    <target name="jar" depends="build">
+        <jar jarfile="lib/pagerduty.jar">
+            <fileset dir="classes"/>
+        </jar>
+    </target>
+    
+</project>
