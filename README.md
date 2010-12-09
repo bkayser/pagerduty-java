@@ -26,10 +26,5 @@ and resolve incidents from your application.
 
 See the PagerDutyAPITest class for examples.
 
-About
-======================================
-
-Bill Kayser
-New Relic, Inc
-copyright(c) 2010 Bill Kayser
+Bill Kayser, December 2010
 
