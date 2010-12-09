@@ -19,6 +19,8 @@ key.
 Using
 ======================================
 
+Refer to the [javadocs](http://bkayser.github.com/pagerduty-java) for documentation.
+
 Create an Incident object and use a PagerDutyAPI instance to trigger, acknowledge
 and resolve incidents from your application.
 
