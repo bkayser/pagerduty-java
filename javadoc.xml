@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project default="javadoc">
     <target name="javadoc">
-        <javadoc access="public" author="true" classpath="/Applications/Helios/plugins/org.junit_4.8.1.v4_8_1_v20100427-1100/junit.jar:lib/json_simple-1.1.jar:/Applications/Helios/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar" destdir="/Users/bill/Dropbox/Eclipse%20Workspace/Pager%20Duty/doc" doctitle="PagerDuty API Helper Library" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.newrelic.pagerduty" source="1.6" sourcepath="src:tests" splitindex="true" use="true" version="true">
-            <link href="file:/Users/bill/Dropbox/Eclipse%20Workspace/Pager%20Duty/doc/"/>
-            <link href="http://www.jmock.org/javadoc/2.1.0"/>
-            <link href="http://www.junit.org/junit/javadoc/4.5"/>
+        <javadoc access="public" author="true" classpath="lib/junit-4.8.2.jar:lib/json_simple-1.1.jar" destdir="doc" doctitle="PagerDuty API Helper Library" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.newrelic.pagerduty" source="1.6" sourcepath="src" splitindex="true" use="true" version="true">
             <link href="http://download.oracle.com/javase/6/docs/api"/>
+            <link href="http://www.junit.org/junit/javadoc/4.5"/>
             <link href="http://java.sun.com/javase/6/docs/api/"/>
         </javadoc>
     </target>
