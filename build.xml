@@ -19,6 +19,8 @@
     <target name="jar" depends="build">
         <jar jarfile="lib/pagerduty.jar">
             <fileset dir="classes"/>
+            <fileset dir="src"/>
+            <fileset dir="tests"/>
         </jar>
     </target>
     
