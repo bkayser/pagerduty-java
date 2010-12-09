@@ -81,6 +81,15 @@ public class PagerDutyAPI {
   public Response resolve(Incident incident) throws MessageException {
     return sendEvent(incident, new ResolveEvent(serviceKey, incident));
   }
+  
+  /** Send a message to the service to verify the serviceKey and serviceURL 
+   * @throws MessageException if there is a problem with the service.  This will
+   * be a 400 response if the service key is no good. 
+   * */
+  public void verify() throws MessageException {
+    Incident bogusIncident = new Incident("Nonexistent incident", "nonexistent key");
+    acknowledge(bogusIncident);
+  }
 
   /*
    * Send the event.  Unfortunately since we're using the J2SE http client
