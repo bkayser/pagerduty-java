@@ -24,6 +24,13 @@ Refer to the [javadocs](http://bkayser.github.com/pagerduty-java) for documentat
 Create an Incident object and use a PagerDutyAPI instance to trigger, acknowledge
 and resolve incidents from your application.
 
+    api = new PagerDutyAPI("5d5a0b30e550012d488912313d009e57");
+    Incident incident = new Incident("My house is on fire");
+    api.trigger(incident);
+    // put out the fire...
+    api.resolve(incident);
+
+
 See the PagerDutyAPITest class for examples.
 
 Bill Kayser, December 2010
